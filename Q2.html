@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> JavaScript programs</title>
+</head>
+<body>
+
+<table id="a" style="width:75px; height:65px; border: 1px solid black; text-align: left;" rules="all">
+
+</table>
+<script>
+i=1;
+do
+{ 
+  var parentnode=document.createElement("tr");
+var node = parentnode.insertCell("td");                           
+var textnode=document.createTextNode(i);         
+node.appendChild(textnode);                             
+ document.getElementById("a").appendChild(parentnode);
+  if(i%5===0)
+    i++;
+
+}while(i<=1000)
+
+</script>
+</body>
+</html>

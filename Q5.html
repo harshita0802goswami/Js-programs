@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Javascript Multiplication Table</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <h2>Generate tables of a given number</h2>
+    <table id="a" style="width:75px; height:65px; border: 1px solid black; text-align: left;" rules="all">
+
+</table>
+
+        <script>
+           var i=1;
+var data=prompt("Enter value")
+do
+{
+  var parentnode=document.createElement("tr");
+  
+  var nod = parentnode.insertCell("td"); 
+  var node = parentnode.insertCell("td");                        
+var textnode=document.createTextNode(data+"*"+i);
+  var  textnod=document.createTextNode(data*i);
+
+  nod.appendChild(textnod);
+node.appendChild(textnode);  document.getElementById("a").appendChild(parentnode);
+    i++;
+}while(i<=1000)
+        </script>
+
+    </body>
+</html>

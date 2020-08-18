@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Question 3</title>
+</head>
+<body>
+<h2>Generate multiples of 5 inside a table</h2>
+<script>
+var table ='';
+var rows=1000;
+var cols =0;
+
+for(var r=1;r<=1000 ; r++)
+{
+    if(r%5===0)
+
+    {
+    
+    table += '<tr>';
+    for( var c=1;c<= 1;c++)
+    {
+        table +='<td>' + r+'</td>';
+    }
+    table += '</tr>';
+    }
+}
+
+
+
+ document.write('<table border =1>'+ table+'</table');
+
+ 
+ </script>
+ </body>
+ </html>
